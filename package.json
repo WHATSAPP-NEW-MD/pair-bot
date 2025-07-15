@@ -1,0 +1,17 @@
+
+{
+  "name": "deploy-ready-whatsapp-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start-bot": "node index.js",
+    "start-site": "node server.js",
+    "start-all": "concurrently \"npm run start-bot\" \"npm run start-site\""
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.6.0",
+    "express": "^4.18.2",
+    "pino": "^8.0.0",
+    "concurrently": "^8.2.0"
+  }
+}
